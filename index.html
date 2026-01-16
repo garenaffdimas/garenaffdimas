@@ -1716,7 +1716,7 @@
                     
                     <p style="margin: 15px 0 8px; color: var(--text-secondary); font-size: 14px;">Ou copie a chave PIX:</p>
                     <div class="pix-key-container">
-                        <div class="pix-key" id="pixKey">123.456.789-00</div>
+                        <div class="pix-key" id="pixKey">0d1a7256-f16d-4529-a088-339f47bb37a4</div>
                         <button type="button" class="copy-btn" id="copyPixKey">
                             <i class="fas fa-copy"></i> COPIAR
                         </button>
@@ -1890,7 +1890,7 @@
     <script>
         // Sistema de E-commerce Completo e Aprimorado
         document.addEventListener('DOMContentLoaded', function() {
-            // Dados iniciais
+            // Dados iniciais - CHAVE PIX ATUALIZADA
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let products = JSON.parse(localStorage.getItem('products')) || [
                 { id: 1, name: "Pacote Básico", diamonds: "100 Diamantes", price: 4.90, icon: "fas fa-gem" },
@@ -1900,7 +1900,8 @@
             ];
             
             let orders = JSON.parse(localStorage.getItem('orders')) || [];
-            let pixKeys = JSON.parse(localStorage.getItem('pixKeys')) || ["123.456.789-00", "doscrias@email.com", "+55 (11) 99999-9999"];
+            // CHAVE PIX ATUALIZADA PARA A SUA CHAVE
+            let pixKeys = JSON.parse(localStorage.getItem('pixKeys')) || ["0d1a7256-f16d-4529-a088-339f47bb37a4"];
             let qrCodeImage = localStorage.getItem('qrCodeImage') || null;
             let adminPassword = "171"; // Senha do admin
             
